@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -e
+
+#FILE_C=` ls | wc -l `
+
+FILE_C=` git ls-files -om | wc -l `
+
+echo $FILE_C
+
+C=0
+
+while [  $C -lt $FILE_C ]; do
+    H=$(( $C + 1 ))
+    #FILE=` ls | head "-$C" | tail -1 `
+    FILE=` git ls-files -om | head "-$H" | tail -1 `
+    git add "$FILE"
+    echo "Enter commit for: $FILE"
+    read COMMIT
+    git commit -m "$COMMIT"
+    ((C += 1))
+done
+
+
+git push --all -u
+
+echo "Done."
+
+
