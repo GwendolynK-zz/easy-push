@@ -7,7 +7,17 @@ For Ubuntu, Linux, raspberry pi and macos (OSX) <br>
 
 ## Install:
 
-Install script comming soon, but for now just `cp` it!
+You can use the install script:
+
+```
+cd ~/
+git clone https://github.com/WestleyK/easy-push
+cd easy-push/
+./make install
+```
+
+Or you can install manualy:
+
 ```
 cd ~/
 git clone https://github.com/WestleyK/easy-push
