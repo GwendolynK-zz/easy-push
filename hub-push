@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Created by: WestleyK
 # Email: westley@sylabs.io
 # Date: Aug 10, 2018
-# version-1.0.0
+# version-1.0.2
 # https://github.com/WestleyK/easy-push
 #
 #
@@ -44,7 +44,7 @@ while [  $C -lt $FILE_C ]; do
     echo "Enter commit for: $FILE"
     read COMMIT
     git commit -m "$COMMIT"
-    ((C += 1))
+    C=$(( $C += 1 ))
 done
 
 echo "Pushing repo..."
