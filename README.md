@@ -1,6 +1,6 @@
 ## Makes it easy when adding, commit and pushing files to repo
 
-For Ubuntu, Linux, raspberry pi and macos (OSX) <br>
+For Ubuntu, Linux, raspberry pi, and MacOS (OSX) <br>
 
 <br>
 <br>
